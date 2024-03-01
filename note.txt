@@ -1,0 +1,34 @@
+//documentation: https://tailwindcss.com/docs/installation
+// tailwind CLI all command
+npm init -y
+npm i -D tailwindcss
+npx tailwindcss init
+
+//package.json
+  "scripts": {
+    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css --watch "
+  },
+
+
+//tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [ "./src/**/*.{html,js,css}",
+  "index.html"
+    ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+// src/tailwind.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+//src/index.html
+  <link href="./output.css" rel="stylesheet">
+
