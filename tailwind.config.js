@@ -4,7 +4,13 @@ module.exports = {
   "index.html"
     ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'poppins':['Poppins','sans-serif'],
+        'Roboto Slab':['Roboto Slab','serif'],
+        'Roboto Condensed':['Roboto Condensed','sans-serif']
+      }
+    },
   },
   plugins: [],
 }
